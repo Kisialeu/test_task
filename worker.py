@@ -1,3 +1,6 @@
+#! /usr/bin/python3
+
+
 import fileinput
 import os
 from custom_loger import Log

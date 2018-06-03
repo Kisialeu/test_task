@@ -1,3 +1,7 @@
+#! /usr/bin/python3
+
+
+
 import random
 import string 
 
@@ -15,7 +19,7 @@ def rand_str(size=6, chars=string.ascii_lowercase + string.ascii_lowercase ):
 
 
 c =0
-with open(r'softeq_test.test', 'a') as log_file:
+with open(r'softeq_test', 'a') as log_file:
 	while c < 20:
 		log_file.write(rand_str() + rand_str() +'\n')
 		c +=1
