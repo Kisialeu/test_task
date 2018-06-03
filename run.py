@@ -43,26 +43,26 @@ def runner():
     elif os.path.exists(f_out):
         Log.logger.debug('Output file {} exists'.format(f_out))
         Log.logger.debug('Waiting for user confirmation...')
-        choise = input('Data will be added to the existing file. Conitnue [y/n] ?\n')
-        if choise.lower() == 'y':
+        choiсe = input('Data will be added to the existing file. Conitnue [y/n] ?\n')
+        if choiсe.lower() == 'y':
             Log.logger.debug('Data will be added to the existing file')
             pass
-        elif choise.lower() == 'n':
+        elif choiсe.lower() == 'n':
             Log.logger.debug('Negative answer is selected. The application will be closed')
             Log.logger.debug('Stop application....')
             exit()
-        elif choise.lower() != 'n' and choise.lower() != 'y':
-            Log.logger.error('Invalid choise')
+        elif choiсe.lower() != 'n' and choiсe.lower() != 'y':
+            Log.logger.error('Invalid choiсe')
             Log.logger.debug('Stop application....')
             exit()
 
     if mode == 'lines':
-        Log.logger.debug('User choise: find lines in {} and put them in {}'.format(f_path, f_out))
+        Log.logger.debug('User choiсe: find lines in {} and put them in {}'.format(f_path, f_out))
         obj = Analyzer(args.file, args.out)
         obj.lines_processing()
         Log.logger.debug('Stop application....')
     elif mode == 'words':
-        Log.logger.debug('User choise: find unique words in {} and put them in {}'.format(f_path, f_out))
+        Log.logger.debug('User choiсe: find unique words in {} and put them in {}'.format(f_path, f_out))
         obj = Analyzer(args.file, args.out)
         obj.words_processing()
         Log.logger.debug('Stop application....')
