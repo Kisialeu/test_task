@@ -269,6 +269,7 @@ class LineProcessingTest(unittest.TestCase):
         self.assertEqual(self.lines_in_data, self.lines_in_file)
 
 
+
 if __name__ == '__main__':
     import xmlrunner
     with open('results.xml', 'wb') as output:
