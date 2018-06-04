@@ -16,8 +16,6 @@ parser.add_argument('-mode', dest='mode', action="store", help='Type of processi
 	 Default - "lines"', default="lines", type=str)
 parser.add_argument('-out', action="store", dest="out", help='Path to output file. Default - output.txt',
                     default="output.txt", type=str)
-parser.add_argument('-log', action="store", dest="out", help='Path to output file. Default - output.txt',
-                    default="output.txt", type=str)
 
 
 def runner():
